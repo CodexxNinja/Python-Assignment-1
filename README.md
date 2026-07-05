@@ -31,3 +31,48 @@ elif user_age >= 18:
 else:
     # Runs ONLY if all the above were False (under 18)
     print("Eligible for child discount.")
+
+# Python-Assignment-1: Iteration & Cryptography
+
+![Python Sticker](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Security Sticker](https://img.shields.io/badge/RSA%20%26%20Hashlib-Security-blue?style=for-the-badge) ![Iteration Sticker](https://img.shields.io/badge/Iteration-Loops-yellow?style=for-the-badge)
+
+<pre>
+  _____       _   _                  
+ |  __ \     | | | |                 
+ | |__) |   _| |_| |__   ___  _ __   
+ |  ___/ | | | __| '_ \ / _ \| '_ \  
+ | |   | |_| | |_| | | | (_) | | | | 
+ |_|    \__, |\__|_| |_|\___/|_| |_| 
+         __/ |                       
+        |___/                        
+</pre>
+
+## Overview
+This repository contains the implementation for **Python-Assignment-1**, which applies practical Python programming to system security concepts like RSA key generation and digital certificates. 
+
+A core component of building these scripts involves handling repetitive tasks—such as processing multiple files for hashing, or waiting for valid user input. This documentation serves as an educational reference on how Python handles these repetitive tasks using **Loops**.
+
+---
+
+## The Core Concept: Loops in Python
+
+In programming, we rarely want to write the same line of code multiple times. "Control Flow" allows us to dictate how our program runs. Loops are a specific type of control flow designed for **iteration**—executing a block of code repeatedly until a specific condition is met or a sequence is fully processed.
+
+Python utilizes two primary types of loops: the `for` loop and the `while` loop.
+
+### 1. The `for` Loop
+The `for` loop is used for iterating over a known sequence. This sequence could be a list of items, a string of characters, or a specific range of numbers. 
+
+Think of a `for` loop like a teacher handing out exams. The teacher knows exactly how many students are in the classroom, and they will perform the action (handing out a paper) for every single student until the class list is finished.
+
+**Common Use Cases:**
+* Processing every item in a dataset.
+* Running a mathematical operation a strict, predefined number of times.
+
+**Syntax Example (Iterating over a list):**
+```python
+# A list of files we need to encrypt
+files_to_hash = ["document.txt", "image.png", "data.csv"]
+
+for file in files_to_hash:
+    print(f"Applying hashlib to: {file}")
